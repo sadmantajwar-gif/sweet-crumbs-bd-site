@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Sweet Crumbs" },
+      { name: "description", content: "Sweet Crumbs Showcase is a modern one-page website for a Bangladeshi homemade dessert shop." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Sweet Crumbs" },
+      { property: "og:description", content: "Sweet Crumbs Showcase is a modern one-page website for a Bangladeshi homemade dessert shop." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Sweet Crumbs" },
+      { name: "twitter:description", content: "Sweet Crumbs Showcase is a modern one-page website for a Bangladeshi homemade dessert shop." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1dbb037-1453-42ed-9e7b-f97a2f24e8ed/id-preview-3b458f74--b340056f-71bb-4c8e-867c-c4f619c09410.lovable.app-1777299773648.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e1dbb037-1453-42ed-9e7b-f97a2f24e8ed/id-preview-3b458f74--b340056f-71bb-4c8e-867c-c4f619c09410.lovable.app-1777299773648.png" },
     ],
     links: [
       {
