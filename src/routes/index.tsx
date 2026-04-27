@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
 });
 
 const WHATSAPP_URL = "https://wa.me/8801000000000?text=Hi%20Sweet%20Crumbs!%20I'd%20like%20to%20place%20an%20order.";
-const FACEBOOK_URL = "https://facebook.com/sweetcrumbs";
+const FACEBOOK_URL = "https://www.facebook.com/sweet_crumbs";
 const INSTAGRAM_URL = "https://instagram.com/sweetcrumbs";
 
 const menu = [
