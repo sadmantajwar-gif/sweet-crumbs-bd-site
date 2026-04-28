@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-desserts.jpg";
 import aboutImg from "@/assets/about-baking.jpg";
+import logoImg from "@/assets/sweet-crumbs-logo.jpg";
 import { Button } from "@/components/ui/button";
 import {
   Cake,
@@ -75,9 +76,11 @@ function Index() {
       <header className="absolute top-0 left-0 right-0 z-30">
         <nav className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2">
-            <span className="h-9 w-9 rounded-full bg-gradient-gold flex items-center justify-center shadow-soft">
-              <Cake className="h-4 w-4 text-primary" />
-            </span>
+            <img
+              src={logoImg}
+              alt="Sweet Crumbs — Dessert & Cake logo"
+              className="h-12 w-12 rounded-full object-cover shadow-soft"
+            />
             <span className="font-display text-xl font-700 text-primary">Sweet Crumbs</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-primary/80">
