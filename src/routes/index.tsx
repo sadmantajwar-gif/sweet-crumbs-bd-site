@@ -167,6 +167,33 @@ function Index() {
         </div>
       </section>
 
+      {/* BRAND / LOGO SHOWCASE */}
+      <section id="brand" className="py-20 md:py-28 bg-gradient-warm">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <span className="text-sm font-semibold uppercase tracking-widest text-gold">Our Brand</span>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl font-700 text-primary text-balance">
+            The Sweet Crumbs mark
+          </h2>
+          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+            A little window into our kitchen — where every cake is baked with care.
+          </p>
+
+          <div className="mt-12 relative inline-block">
+            <div className="absolute -inset-6 bg-gradient-gold rounded-[2.5rem] opacity-30 blur-2xl" />
+            <div className="relative rounded-[2rem] bg-card shadow-warm border-4 border-card p-8 md:p-14">
+              <img
+                src={logoImg}
+                alt="Sweet Crumbs — Dessert & Cake official logo"
+                width={600}
+                height={600}
+                loading="lazy"
+                className="w-64 h-64 md:w-80 md:h-80 object-contain mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section id="about" className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
