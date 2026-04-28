@@ -68,24 +68,6 @@ const specials = [
   { icon: Heart, title: "Seasonal Gift Boxes", text: "Eid, winter & festive gift boxes — curated and beautifully wrapped." },
 ];
 
-const reviews = [
-  {
-    name: "Tasnim A.",
-    location: "Dhaka",
-    text: "The brownies are unreal — gooey in the middle, crinkly on top. My whole family is obsessed. Already ordered three times this month!",
-  },
-  {
-    name: "Rifat H.",
-    location: "Gulshan",
-    text: "Got a custom chocolate cake for my wife's birthday. Beautiful packaging, on-time delivery, and the cheesecake slices were the star of the night.",
-  },
-  {
-    name: "Nashita K.",
-    location: "Banani",
-    text: "Honestly the cutest dessert shop on Instagram. Cookies tasted like a hug. Will be ordering for every office meeting from now on. 🍪",
-  },
-];
-
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -327,44 +309,6 @@ function Index() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* REVIEWS */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto">
-            <span className="text-sm font-semibold uppercase tracking-widest text-gold">Sweet Words</span>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-700 text-primary text-balance">
-              Loved by <span className="italic">our customers</span>
-            </h2>
-          </div>
-          <div className="mt-14 grid md:grid-cols-3 gap-6">
-            {reviews.map((r) => (
-              <figure
-                key={r.name}
-                className="rounded-3xl bg-card border border-border p-7 shadow-soft flex flex-col"
-              >
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-gold text-gold" />
-                  ))}
-                </div>
-                <blockquote className="mt-4 text-primary/90 leading-relaxed font-display text-lg italic">
-                  "{r.text}"
-                </blockquote>
-                <figcaption className="mt-6 flex items-center gap-3 pt-5 border-t border-border">
-                  <div className="h-10 w-10 rounded-full bg-gradient-gold flex items-center justify-center font-display font-700 text-primary">
-                    {r.name.charAt(0)}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-primary text-sm">{r.name}</p>
-                    <p className="text-xs text-muted-foreground">{r.location}</p>
-                  </div>
-                </figcaption>
-              </figure>
-            ))}
           </div>
         </div>
       </section>
