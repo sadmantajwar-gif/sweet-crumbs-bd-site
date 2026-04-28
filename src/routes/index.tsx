@@ -126,18 +126,6 @@ function Index() {
                 <a href="#menu">View Menu</a>
               </Button>
             </div>
-            <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
-              <div className="flex items-center gap-1.5">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-gold text-gold" />
-                  ))}
-                </div>
-                <span className="font-semibold text-primary">4.9</span>
-              </div>
-              <span>·</span>
-              <span>500+ happy orders</span>
-            </div>
           </div>
 
           <div className="relative">
@@ -219,18 +207,6 @@ function Index() {
               chocolate cake slices, and fully customized cakes. Every order is hand-mixed, hand-decorated and
               baked the day it's delivered — because dessert tastes better when it's made just for you.
             </p>
-            <div className="mt-8 grid grid-cols-3 gap-4">
-              {[
-                { n: "100%", l: "Homemade" },
-                { n: "500+", l: "Orders baked" },
-                { n: "4.9★", l: "Average rating" },
-              ].map((s) => (
-                <div key={s.l} className="rounded-2xl bg-card border border-border p-4 text-center shadow-soft">
-                  <p className="font-display text-2xl font-700 text-primary">{s.n}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{s.l}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
